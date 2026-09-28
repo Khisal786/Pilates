@@ -1,7 +1,7 @@
 title: "SoHo Pilates Studio"
 email: "concierge@sohopilates.com"
 description: "Elite classical and contemporary reformer Pilates studio located in the heart of SoHo, New York."
-baseurl: "/SoHo-Pilates-Studio" # Adjust to match repository name
+baseurl: "/Pilates"
 url: "https://khisal786.github.io"
 
 markdown: kramdown
