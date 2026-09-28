@@ -1,0 +1,157 @@
+.booking-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 19, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+
+    .booking-modal-card {
+      transform: translateY(0);
+    }
+  }
+}
+
+.booking-modal-card {
+  background: $bg-surface;
+  width: 100%;
+  max-width: 540px;
+  border-radius: $border-radius-card;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: $box-shadow-float;
+  transform: translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin: 1rem;
+
+  .modal-close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    cursor: pointer;
+    color: $text-muted;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $text-main;
+    }
+  }
+
+  .modal-header {
+    margin-bottom: 2rem;
+
+    .subheading-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: $primary-green;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-family: $font-serif;
+      font-size: 1.75rem;
+      color: $text-main;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $text-muted;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: $text-main;
+    }
+
+    input, textarea {
+      padding: 0.85rem 1rem;
+      border: 1px solid $border-color;
+      border-radius: 8px;
+      font-family: $font-sans;
+      font-size: 0.95rem;
+      background: #fafaf8;
+      color: $text-main;
+      outline: none;
+      transition: border-color 0.2s;
+
+      &:focus {
+        border-color: $primary-green;
+        background: #fff;
+      }
+    }
+  }
+
+  .btn-submit-order {
+    background: $primary-green;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: $border-radius-pill;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-top: 0.5rem;
+
+    &:hover {
+      background: lighten($primary-green, 8%);
+    }
+  }
+}
+
+.toast-notification {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: $primary-green;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: $box-shadow-float;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 3000;
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

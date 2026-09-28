@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  
+  <!-- Sticky Glassmorphism Header -->
+  {% include header.html %}
+
+  <!-- Main Dynamic Page Content -->
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <!-- Studio Footer -->
+  {% include footer.html %}
+
+  <!-- Interactive Booking / Consultation Modal Drawer -->
+  {% include schedule_modal.html %}
+
+  <!-- Main Frontend JavaScript Engine -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+- name: "Elena Rostova"
+  role: "Founder & Master Instructor"
+  bio: "Former professional ballet dancer with over 14 years of classical Pilates mastery in New York and London. Specializes in spinal alignment and injury rehabilitation."
+  image: "/assets/images/instructor-1.jpg"
+  specialty: "Classical Reformer & Biomechanics"
+
+- name: "Marcus Vance"
+  role: "Senior Movement Coach"
+  bio: "Certified through Peak Pilates and STOTT, Marcus brings an athletic, strength-focused edge to traditional reformer and tower conditioning."
+  image: "/assets/images/instructor-2.jpg"
+  specialty: "Tower Resistance & Athletic Conditioning"
+
+- name: "Chloe D'Souza"
+  role: "Lead Reformer Specialist"
+  bio: "Passionate about fluid movement, breathwork, and mindful core integration. Chloe's classes are known for their seamless pacing and deep muscular burn."
+  image: "/assets/images/instructor-3.jpg"
+  specialty: "Dynamic Flow & Jumpboard"

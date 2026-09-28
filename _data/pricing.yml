@@ -1,0 +1,33 @@
+- title: "Introductory Trio"
+  price: "$115"
+  period: "3 Classes"
+  description: "The perfect entry point for first-time guests to experience our reformer and tower sessions across any instructor."
+  features:
+    - "Valid for 30 days from first class"
+    - "Access to all group reformer sessions"
+    - "Complimentary grip socks included"
+  highlighted: false
+  cta: "Claim Intro Pack"
+
+- title: "Unlimited Monthly"
+  price: "$340"
+  period: "Per Month"
+  description: "Our signature membership for dedicated practitioners seeking unlimited access to all group studio classes."
+  features:
+    - "Unlimited group reformer & tower classes"
+    - "Priority 14-day advance booking window"
+    - "2 guest passes per month"
+    - "10% off private 1:1 sessions & retail"
+  highlighted: true
+  cta: "Join Membership"
+
+- title: "10-Class Series"
+  price: "$380"
+  period: "10 Classes"
+  description: "Flexible class pack designed for practitioners with fluctuating schedules who want full booking freedom."
+  features:
+    - "Valid for 6 months from purchase date"
+    - "Full access to group class schedule"
+    - "Rollover unused classes upon renewal"
+  highlighted: false
+  cta: "Buy Class Pack"

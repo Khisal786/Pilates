@@ -1,0 +1,145 @@
+---
+layout: default
+title: "SoHo Pilates Studio | Classical & Contemporary Reformer"
+---
+
+<!-- 1. HERO SECTION -->
+<section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <span class="subheading-tag">SoHo, New York • Movement & Discipline</span>
+      <h1 class="hero-title">Precision Movement for Mind & Body</h1>
+      <p class="hero-subtitle">Experience elite reformer and tower conditioning in our minimalist daylight studio. Thoughtfully programmed for strength, alignment, and fluid grace.</p>
+      <div class="hero-actions">
+        <button class="btn-cta open-booking-modal" data-class-title="Introductory Trio">Explore Class Schedule</button>
+        <a href="#pricing" class="btn-secondary">View Memberships</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image-card">
+        <img src="{{ '/assets/images/hero-pilates.jpg' | relative_url }}" alt="SoHo Pilates Reformer Suite" class="hero-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. CLASSES SECTION (YAML Data-Driven & Filterable) -->
+<section id="classes" class="classes-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="subheading-tag">Signature Offerings</span>
+      <h2>Designed for Depth & Stamina</h2>
+      <p>Choose from intimate group reformer sessions or specialized tower and private instruction.</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All Sessions</button>
+      <button class="filter-tab" data-filter="Reformer">Reformer</button>
+      <button class="filter-tab" data-filter="Tower">Tower</button>
+      <button class="filter-tab" data-filter="Private">Private 1:1</button>
+    </div>
+
+    <!-- Classes Grid -->
+    <div class="classes-grid">
+      {% for class in site.data.classes %}
+      <div class="class-card" data-category="{{ class.category }}">
+        <div class="class-card-header">
+          <span class="class-badge">{{ class.badge }}</span>
+          <span class="class-duration">{{ class.duration }}</span>
+        </div>
+        <h3 class="class-title">{{ class.title }}</h3>
+        <p class="class-desc">{{ class.description }}</p>
+        <div class="class-meta">
+          <span>Instructor: <strong>{{ class.instructor }}</strong></span>
+          <span>Level: {{ class.intensity }}</span>
+        </div>
+        <button class="btn-card-action open-booking-modal" data-class-title="{{ class.title }}">Reserve Spot</button>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 3. INSTRUCTORS SECTION -->
+<section id="instructors" class="instructors-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="subheading-tag">Expert Roster</span>
+      <h2>Meet Your Movement Guides</h2>
+      <p>Our instructors combine years of classical dance, physical therapy, and advanced Pilates mastery.</p>
+    </div>
+
+    <div class="instructors-grid">
+      {% for instructor in site.data.instructors %}
+      <div class="instructor-card">
+        <div class="instructor-image-wrap">
+          {% if instructor.image %}
+          <img src="{{ instructor.image | relative_url }}" alt="{{ instructor.name }}" class="instructor-img">
+          {% else %}
+          <div class="instructor-img-placeholder">{{ instructor.name | slice: 0, 2 }}</div>
+          {% endif %}
+        </div>
+        <div class="instructor-info">
+          <h3>{{ instructor.name }}</h3>
+          <span class="instructor-role">{{ instructor.role }}</span>
+          <p class="instructor-bio">{{ instructor.bio }}</p>
+          <span class="instructor-specialty">Specialty: {{ instructor.specialty }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 4. PRICING SECTION -->
+<section id="pricing" class="pricing-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="subheading-tag">Membership & Packs</span>
+      <h2>Investment in Your Practice</h2>
+      <p>Flexible options designed to suit your schedule, whether visiting weekly or committing to daily alignment.</p>
+    </div>
+
+    <div class="pricing-grid">
+      {% for plan in site.data.pricing %}
+      <div class="pricing-card {% if plan.highlighted %}highlighted{% endif %}">
+        {% if plan.highlighted %}
+        <div class="plan-badge">Most Popular</div>
+        {% endif %}
+        <h3>{{ plan.title }}</h3>
+        <div class="plan-price">
+          <span class="currency">{{ plan.price }}</span>
+          <span class="period">/ {{ plan.period }}</span>
+        </div>
+        <p class="plan-desc">{{ plan.description }}</p>
+        <ul class="plan-features">
+          {% for feature in plan.features %}
+          <li>✓ {{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <button class="btn-plan-action open-booking-modal" data-class-title="{{ plan.title }} — {{ plan.price }}">{{ plan.cta }}</button>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 5. STUDIO LOCATION & CONTACT FOOTER BLOCK -->
+<section id="studio" class="studio-location-section">
+  <div class="container studio-container">
+    <div class="studio-info-box">
+      <span class="subheading-tag">Visit The Studio</span>
+      <h2>SoHo Sanctuary</h2>
+      <p class="address-text">472 Broadway, 3rd Floor<br>New York, NY 10013</p>
+      <div class="hours-list">
+        <div class="hour-row"><span>Monday – Friday</span> <span>6:30 AM – 8:00 PM</span></div>
+        <div class="hour-row"><span>Saturday – Sunday</span> <span>8:00 AM – 4:00 PM</span></div>
+      </div>
+      <a href="https://maps.google.com" target="_blank" class="btn-directions">Get Directions</a>
+    </div>
+    <div class="studio-image-box">
+      <img src="{{ '/assets/images/studio-interior.jpg' | relative_url }}" alt="SoHo Pilates Studio Interior" class="studio-interior-img">
+    </div>
+  </div>
+</section>

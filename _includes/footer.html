@@ -1,0 +1,31 @@
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-col">
+      <a href="{{ '/' | relative_url }}" class="footer-logo">SOHO PILATES</a>
+      <p class="footer-about">Redefining core strength and classical movement in downtown New York City.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Navigation</h4>
+      <ul>
+        {% for item in site.data.navigation.footer %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Studio Hours</h4>
+      <p>Mon – Fri: 6:30 AM – 8:00 PM</p>
+      <p>Sat – Sun: 8:00 AM – 4:00 PM</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>472 Broadway, 3rd Floor<br>New York, NY 10013</p>
+      <p>concierge@sohopilates.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {{ site.time | date: '%Y' }} SoHo Pilates Studio. Built via Swift Web Sync.</p>
+    </div>
+  </div>
+</footer>

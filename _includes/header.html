@@ -1,0 +1,35 @@
+<header class="site-header">
+  <div class="container header-container">
+    <a href="{{ '/' | relative_url }}" class="brand-logo">
+      <span class="logo-mark">S</span>
+      <span class="logo-text">SOHO PILATES</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#classes" class="nav-link">Classes</a>
+      <a href="#instructors" class="nav-link">Instructors</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#studio" class="nav-link">The Studio</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn-cta open-booking-modal" data-class-title="General Inquiry">Book a Session</button>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="mobile-nav-links">
+      <a href="#classes" class="mobile-link">Classes</a>
+      <a href="#instructors" class="mobile-link">Instructors</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
+      <a href="#studio" class="mobile-link">The Studio</a>
+      <button class="btn-cta open-booking-modal mobile-cta" data-class-title="General Inquiry">Book a Session</button>
+    </div>
+  </div>
+</header>

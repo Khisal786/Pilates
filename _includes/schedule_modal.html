@@ -1,0 +1,41 @@
+<div class="booking-modal-overlay" id="bookingModal">
+  <div class="booking-modal-card">
+    <button class="modal-close-btn" id="closeModal">&times;</button>
+    <div class="modal-header">
+      <span class="subheading-tag">Secure Your Reformer</span>
+      <h3 id="modalTitle">Book Session</h3>
+      <p>Fill in your details below to reserve your spot. No payment required right now.</p>
+    </div>
+
+    <form id="bookingForm" class="booking-form">
+      <input type="hidden" id="selectedClassInput" name="class_title" value="">
+      
+      <div class="form-group">
+        <label for="clientName">Full Name</label>
+        <input type="text" id="clientName" required placeholder="e.g. Sarah Jenkins">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="clientPhone">Phone Number</label>
+          <input type="tel" id="clientPhone" required placeholder="+1 (555) 019-2834">
+        </div>
+        <div class="form-group">
+          <label for="preferredDate">Preferred Date</label>
+          <input type="date" id="preferredDate" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="clientNotes">Experience / Special Requests</label>
+        <textarea id="clientNotes" rows="3" placeholder="Let us know if you're new to reformer or have injuries..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit-order">Confirm Reservation via WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast-notification" id="toastNotification">
+  <span>✓ Booking request prepared! Redirecting to studio...</span>
+</div>

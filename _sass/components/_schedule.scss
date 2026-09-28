@@ -1,0 +1,117 @@
+.classes-section {
+  background: $bg-surface;
+
+  .filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+
+    .filter-tab {
+      background: $bg-canvas;
+      border: 1px solid $border-color;
+      padding: 0.6rem 1.25rem;
+      border-radius: $border-radius-pill;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: $text-muted;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &.active, &:hover {
+        background: $primary-green;
+        color: #fff;
+        border-color: $primary-green;
+      }
+    }
+  }
+
+  .classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .class-card {
+    background: $bg-canvas;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-card;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: $transition-smooth;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: $box-shadow-subtle;
+    }
+
+    .class-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+
+      .class-badge {
+        background: $accent-lime;
+        color: $text-main;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 0.25rem 0.75rem;
+        border-radius: $border-radius-pill;
+        text-transform: uppercase;
+      }
+
+      .class-duration {
+        font-size: 0.85rem;
+        color: $text-muted;
+        font-weight: 500;
+      }
+    }
+
+    .class-title {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .class-desc {
+      color: $text-muted;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .class-meta {
+      font-size: 0.85rem;
+      color: $text-muted;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      margin-bottom: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid $border-color;
+
+      strong {
+        color: $text-main;
+      }
+    }
+
+    .btn-card-action {
+      background: transparent;
+      color: $primary-green;
+      border: 1px solid $primary-green;
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: $border-radius-pill;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        background: $primary-green;
+        color: #fff;
+      }
+    }
+  }
+}

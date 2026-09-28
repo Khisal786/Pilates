@@ -1,0 +1,35 @@
+- id: reformer-foundations
+  title: "Reformer Foundations"
+  category: "Reformer"
+  intensity: "Beginner / Intermediate"
+  duration: "50 Mins"
+  description: "An intentional, foundational session focusing on carriage control, spring tensions, and core stability using state-of-the-art Allegro 2 reformers."
+  instructor: "Elena Rostova"
+  badge: "Most Popular"
+
+- id: dynamic-tower
+  title: "Dynamic Tower & Mat"
+  category: "Tower"
+  intensity: "Intermediate / Advanced"
+  duration: "50 Mins"
+  description: "Combines spring-loaded resistance from the wall tower with deep eccentric mat work to lengthen muscles and challenge spinal articulation."
+  instructor: "Marcus Vance"
+  badge: "High Energy"
+
+- id: athletic-reformer
+  title: "Athletic Reformer Circuit"
+  category: "Reformer"
+  intensity: "Advanced"
+  duration: "45 Mins"
+  description: "A fast-paced, high-endurance fusion of traditional reformer work and jumpboard intervals designed to elevate heart rate and muscle stamina."
+  instructor: "Chloe D'Souza"
+  badge: "Advanced"
+
+- id: private-one-on-one
+  title: "Private 1:1 Clinical Assessment"
+  category: "Private"
+  intensity: "All Levels"
+  duration: "55 Mins"
+  description: "Customized biomechanical evaluation and bespoke programming tailored for rehabilitation, prenatal care, or elite athletic conditioning."
+  instructor: "Elena Rostova"
+  badge: "Exclusive"

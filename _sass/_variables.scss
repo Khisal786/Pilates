@@ -1,0 +1,28 @@
+// =================================================================
+// =================================================================
+
+// Color Palette (Vibrant Boutique Studio Aesthetic)
+$bg-canvas: #F4F5F0;          // Soft organic bone / neutral paper base
+$bg-surface: #FFFFFF;        // Crisp white card surfaces
+$text-main: #111813;         // Deep carbon-black structural ink
+$text-muted: #556058;        // Slate-sage neutral for subtitles & metadata
+
+// Brand Accents (Vibrant Urban Studio Highlights)
+$primary-green: #1B3B2B;     // Deep classic botanical green (anchors authority)
+$accent-lime: #C6E255;       // Vibrant energetic lime/chartreuse (interactive punch)
+$accent-lime-hover: #B2CD46; // Darker lime state for button interactions
+
+// Borders & Shadows
+$border-color: #DDE2D5;      // Clean organic border line
+$box-shadow-subtle: 0 10px 30px rgba(27, 59, 43, 0.06);
+$box-shadow-float: 0 20px 40px rgba(17, 24, 19, 0.12);
+
+// Typography Stack
+$font-serif: "Playfair Display", Georgia, serif;
+$font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+// Layout & Transitions
+$container-max: 1280px;
+$border-radius-pill: 9999px;
+$border-radius-card: 16px;
+$transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);

@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent horizontal scroll and lock viewport bounds on mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-sans;
+  background-color: $bg-canvas;
+  color: $text-main;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-serif;
+  font-weight: 600;
+  color: $text-main;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}

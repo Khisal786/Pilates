@@ -1,0 +1,19 @@
+header:
+  - title: "Classes"
+    url: "#classes"
+  - title: "Instructors"
+    url: "#instructors"
+  - title: "Pricing"
+    url: "#pricing"
+  - title: "The Studio"
+    url: "#studio"
+
+footer:
+  - title: "Reformer Foundations"
+    url: "#classes"
+  - title: "Dynamic Tower"
+    url: "#classes"
+  - title: "Private Coaching"
+    url: "#classes"
+  - title: "Studio Policies"
+    url: "#"
