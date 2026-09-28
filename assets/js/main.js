@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const clientNotes = document.getElementById('clientNotes').value;
 
       // Studio WhatsApp destination number (placeholder for demo)
-      const studioWhatsApp = "15550192834"; 
+      const studioWhatsApp = "923049999325"; 
 
       const message = `🧘‍♀️ *NEW STUDIO BOOKING REQUEST*%0A` +
                       `----------------------------------%0A` +
